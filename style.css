@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/08/5f/03/085f036aa0707d484ad1c2e2eb7bdb8f.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.calculadora {
+    background:url("https://i.pinimg.com/736x/8e/a1/f7/8ea1f7bf7f4dd7a727c41fdbbc1083c1.jpg");
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(255, 100, 150, 0.3);
+    text-align: center;
+    border: 3px solid #ff99bb;
+}
+
+#display {
+    width: calc(100% - 20px);
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff0f5;
+    color: #ff66a3;
+    font-weight: bold;
+    box-shadow: inset 2px 2px 5px rgba(255, 100, 150, 0.2);
+    text-align: center;
+    display: block;
+    line-height: 50px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ff99bb;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(255, 100, 150, 0.4);
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    background: #ff66a3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #ff4d94;
+    transform: scale(0.95);
+}
+
+button:nth-child(1), button:nth-child(2) {
+    background: #ff80bf;
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover {
+    background: #ff4d94;
+}
+
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(18) {
+      background: #ff99aa;
+}
+
+button:nth-child(3):hover, button:nth-child(4):hover, button:nth-child(8):hover, button:nth-child(12):hover, button:nth-child(16):hover, button:nth-child(18):hover {
+    background: #ff66a3;
+}
+
+button:nth-child(17) {
+    background: #ff99bb;
+}
